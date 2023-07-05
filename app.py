@@ -25,9 +25,9 @@ def recommend(movie):
 
 
 
-movies_dict = pickle.load(open('C:/Users/MEHEK/OneDrive/Desktop/python project/movie_recommender/movies_dict.pk1', 'rb'))
+movies_dict = pickle.load(open('movies_dict.pk1', 'rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('C:/Users/MEHEK/OneDrive/Desktop/python project/movie_recommender/similarity.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 st.title("Movie Recommender System")
 option = st.selectbox(
     'How would you like to be contacted?',
